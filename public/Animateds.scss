@@ -1,0 +1,33 @@
+// @import 'animate.css';
+
+.active{
+    color: red;
+}
+
+
+.animate-text{
+    opacity: 0;
+    min-width: 10px;
+    display: inline-block;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+}
+
+.animate-text-hover{
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover{
+        color: #a4abab;
+        stroke: red;
+        stroke-width: 20em;
+        animation: rubberBand 1s;
+    }
+}
+
+@for $i from 1 through 45 {
+    .animate-text._#{$i}{
+        animation-delay: #{$i / 12}s;
+    }
+}
