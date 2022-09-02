@@ -136,75 +136,6 @@ export const NavTopSearchBtn = styled.input`
 
 `;
 
-/////---------------Nav Mobile Toggle Lines---------------////////////////
-
-export const NavMobileLine1 = styled.div`
-    width: 35px;
-    height: 2px;
-    background: yellow;
-    transition: .5s ease-in-out;
-`;
-
-export const NavMobileLine2 = styled.div`
-    width: 35px;
-    height: 2px;
-    margin-top: 5px;
-    background: yellow;
-    transition: .5s ease-in-out;
-`;
-
-export const NavMobileLine3 = styled.div`
-    width: 35px;
-    height: 2px;
-    margin-top: 5px;
-    background: yellow;
-    transition: .5s ease-in-out;
-    
-`;
-
-/////---------------Nav Mobile Toggle  Cont----------------////////////////
-
-export const NavMobileToggle = styled.div`
-    display: none;
-    cursor: pointer;
-    margin-top: 10px;
-    padding: 10px 5px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid yellow;
-    
-    
-    @media (max-width:800px) {
-        top: -5px;
-        right: 35px;
-        display: flex;
-        overflow: hidden;
-        position: absolute;
-        
-    }
-
-`;
-
-/////---------------Nav Mobile Open Container----------------////////////////
-
-export const NavMobileToggleViews = styled.div`
-    left: 0;
-    width: 0;
-    opacity: 0;
-    height: 110%;
-    color: black;
-    cursor: pointer;
-    position: fixed;
-    overflow: hidden;
-    align-items: center;
-    background: yellow;
-    flex-direction: column;
-    justify-content: center;
-    transition: .5s ease-in-out;
-    border: 1px solid transparent;
-
-`;
 
 /////---------------Nav Top Help Links Container----------------////////////////
 
@@ -223,6 +154,12 @@ export const NavTopLinkCont = styled.ul`
 
     @media (max-width:800px){
         right: 10px;
+        position: absolute;
+    }
+
+    @media (max-width:400px){
+        right: 10px;
+        padding-bottom: .6em;
         position: absolute;
     }
     
@@ -353,4 +290,127 @@ export const NavDownCategoryList = styled.li`
     font-size: 1rem;
     padding: 10px 10px;
 `;
+
+
+
+/////---------------Nav Mobile Toggle Lines---------------////////////////
+
+export const NavMobileLine1 = styled.div`
+    width: 35px;
+    height: 2px;
+    background: yellow;
+    transition: .5s ease-in-out;
+`;
+
+export const NavMobileLine2 = styled.div`
+    width: 35px;
+    height: 2px;
+    margin-top: 5px;
+    background: yellow;
+    transition: .5s ease-in-out;
+`;
+
+export const NavMobileLine3 = styled.div`
+    width: 35px;
+    height: 2px;
+    margin-top: 5px;
+    background: yellow;
+    transition: .5s ease-in-out;
+    
+`;
+
+/////---------------Nav Mobile Toggle  Cont----------------////////////////
+
+export const NavMobileToggle = styled.div`
+    display: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid yellow;
+    
+    
+    @media (max-width:800px) {
+        top: -5px;
+        right: 35px;
+        display: flex;
+        overflow: hidden;
+        position: absolute;
+        
+    }
+
+`;
+
+/////---------------Nav Mobile Open Container----------------////////////////
+
+export const NavMobileToggleViews = styled.div`
+    left: 0;
+    width: 0;
+    opacity: 0;
+    height: 110%;
+    color: black;
+    position: fixed;
+    overflow: hidden;
+    background: yellow;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    border: 1px solid transparent;
+
+    svg{
+        top: -10px;
+        width: 70px;
+        right: -10px;
+        height: 70px;
+        display: flex;
+        color: yellow;
+        cursor: pointer;
+        padding: 20px 20px;
+        position: absolute;
+        background: black;
+        border-radius: 100px;
+    }
+
+`;
+
+/////---------------Nav Mobile Link Container----------------////////////////
+
+export const NavMobileToggleViewsLinkCont = styled.div`
+    top: 10px;
+    left: 0px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+`;
+
+// /////---------------Nav Mobile Links----------------////////////////
+
+export const NavMobileToggleViewsLinks = styled.div`
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    /* background: red; */
+
+    &:nth-child(1){
+        margin-left: 1.5em;
+    }
+
+    &:nth-child(2){
+        margin-left: 1.5em;
+    }
+
+    &:nth-child(3){
+        margin-left: 1.5em;
+    }
+
+    &:nth-child(4){
+        margin-left:1.5em;
+    }
+`;
+
 

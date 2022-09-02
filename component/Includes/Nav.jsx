@@ -1,7 +1,7 @@
-import { faBagShopping, faBorderAll, faChevronDown, faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faBorderAll, faChevronDown, faMagnifyingGlass, faTimes, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Fragment, useState } from 'react'
-import { NavCont, NavDownCategory, NavDownCont, NavDownHelpLinkCont, NavDownHelpLinks, NavMobileLine1, NavMobileLine2, NavMobileLine3, NavMobileToggle, NavMobileToggleViews, NavTopCont, NavTopLink, NavTopLinkCont, NavTopLinkDot, NavTopLogo, NavTopSearch, NavTopSearchBtn, NavTopSearchInput } from '../../Stylings/includes/Nav'
+import { NavCont, NavDownCategory, NavDownCont, NavDownHelpLinkCont, NavDownHelpLinks, NavMobileLine1, NavMobileLine2, NavMobileLine3, NavMobileToggle, NavMobileToggleViews, NavMobileToggleViewsLinkCont, NavMobileToggleViewsLinks, NavTopCont, NavTopLink, NavTopLinkCont, NavTopLinkDot, NavTopLogo, NavTopSearch, NavTopSearchBtn, NavTopSearchInput } from '../../Stylings/includes/Nav'
 
 const Nav = () => {
 
@@ -59,7 +59,21 @@ const Nav = () => {
                 </NavDownCont>
             </NavCont>
             <NavMobileToggleViews id={openNav ? 'opened' : 'closed'}>
-                s
+                <FontAwesomeIcon onClick={OpenNav} icon={faTimes} />
+                <NavMobileToggleViewsLinkCont>
+                    <NavMobileToggleViewsLinks>
+                        Home
+                    </NavMobileToggleViewsLinks>
+                    <NavMobileToggleViewsLinks>
+                        Store
+                    </NavMobileToggleViewsLinks>
+                    <NavMobileToggleViewsLinks>
+                        About us
+                    </NavMobileToggleViewsLinks>
+                    <NavMobileToggleViewsLinks>
+                        Contact Us
+                    </NavMobileToggleViewsLinks>
+                </NavMobileToggleViewsLinkCont>
             </NavMobileToggleViews>
         </Fragment>
     )
