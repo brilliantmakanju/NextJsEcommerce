@@ -322,6 +322,7 @@ export const NavMobileLine3 = styled.div`
 /////---------------Nav Mobile Toggle  Cont----------------////////////////
 
 export const NavMobileToggle = styled.div`
+    outline: none;
     display: none;
     cursor: pointer;
     margin-top: 10px;
