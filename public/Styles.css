@@ -17,7 +17,7 @@
 @media (max-width:800px) {
     #opened{
         left: 0;
-        width:50%;
+        width:70%;
         opacity: 1;
         display: flex;
         overflow: hidden;
