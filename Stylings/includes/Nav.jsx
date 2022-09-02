@@ -161,8 +161,10 @@ export const NavTopLinkCont = styled.ul`
 
     @media (max-width:400px){
         right: 10px;
-        padding-bottom: .6em;
+        cursor: none;
+        outline: none;
         position: absolute;
+        padding-bottom: .6em;
     }
     
 `;
@@ -184,6 +186,11 @@ export const NavTopLink = styled.li`
     &:not(:first-child){
         margin-left: 20px;
     }
+
+    @media (max-width:800px){
+        cursor: none;
+        outline: none;
+    }    
 
 `;
 
