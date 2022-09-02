@@ -1,11 +1,27 @@
 import { ServerStyleSheet } from 'styled-components'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
+// 
 export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en" >
-                < Head></ Head >
+                < Head>
+                    <link
+                        rel="preload"
+                        href="/fonts/QwitcherGrypen-Bold.ttf"
+                        as="font"
+                        type="font/ttf"
+                        crossOrigin=""
+                    />
+                    <link
+                        rel="preload"
+                        href="/fonts/QwitcherGrypen-Regular.ttf"
+                        as="font"
+                        type="font/ttf"
+                        crossOrigin=""
+                    />
+                </ Head >
                 <body>
                     < Main />
                     < NextScript />
