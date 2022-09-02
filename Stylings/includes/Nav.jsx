@@ -366,6 +366,7 @@ export const NavMobileToggleViews = styled.div`
         display: flex;
         color: yellow;
         cursor: pointer;
+        
         padding: 20px 20px;
         position: absolute;
         background: black;
