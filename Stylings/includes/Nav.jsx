@@ -154,6 +154,8 @@ export const NavTopLinkCont = styled.ul`
 
     @media (max-width:800px){
         right: 10px;
+        cursor: none;
+        outline: none;
         position: absolute;
     }
 
