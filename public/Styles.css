@@ -3,10 +3,21 @@
     display: none;
 }
 
+@media (max-width:400px) {
+    #opened{
+        left: 0;
+        width:70%;
+        opacity: 1;
+        display: flex;
+        overflow: hidden;
+    
+    }
+}
+
 @media (max-width:800px) {
     #opened{
         left: 0;
-        width:100%;
+        width:50%;
         opacity: 1;
         display: flex;
         overflow: hidden;
@@ -15,13 +26,3 @@
     }
 }
 
-@media (max-width:400px) {
-    #opened{
-        left: 0;
-        width:100%;
-        opacity: 1;
-        display: flex;
-        overflow: hidden;
-    
-    }
-}
