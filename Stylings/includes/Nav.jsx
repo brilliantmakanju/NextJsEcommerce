@@ -5,9 +5,8 @@ import styled from "styled-components";
 export const NavCont = styled.nav`
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     color: yellow;
-    overflow: hidden;
+    flex-wrap: wrap;
     padding: 2.5rem 0;
     position: relative;
     align-items: center;
@@ -32,12 +31,12 @@ export const NavTopCont = styled.div`
 
     
     @media (max-width:800px){
-        top: -5vh;
+        top: -.5vh;
         padding: 0 10px;
     }
     
-    @media (max-width:300px){
-        top: 1vh;
+    @media (max-width:400px){
+        top: 1.5vh;
         padding: 0 10px;
     }
 `;
@@ -163,15 +162,6 @@ export const NavMobileLine3 = styled.div`
     
 `;
 
-/////---------------Nav Mobile Toggle  Btn----------------////////////////
-
-export const NavMobileToggleInput = styled.input`
-    opacity: 0;
-    /* display: none; */
-    position: absolute;
-    white-space: nowrap;
-`;
-
 /////---------------Nav Mobile Toggle  Cont----------------////////////////
 
 export const NavMobileToggle = styled.div`
@@ -196,6 +186,25 @@ export const NavMobileToggle = styled.div`
 
 `;
 
+/////---------------Nav Mobile Open Container----------------////////////////
+
+export const NavMobileToggleViews = styled.div`
+    left: 0;
+    width: 0;
+    opacity: 0;
+    height: 110%;
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    overflow: hidden;
+    align-items: center;
+    background: yellow;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    border: 1px solid transparent;
+
+`;
 
 /////---------------Nav Top Help Links Container----------------////////////////
 
