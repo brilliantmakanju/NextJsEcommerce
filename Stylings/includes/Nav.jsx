@@ -336,6 +336,8 @@ export const NavMobileToggle = styled.div`
     @media (max-width:800px) {
         top: -5px;
         right: 35px;
+        cursor: none;
+        outline: none;
         display: flex;
         overflow: hidden;
         position: absolute;
