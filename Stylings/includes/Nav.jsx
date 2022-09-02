@@ -353,7 +353,9 @@ export const NavMobileToggleViews = styled.div`
     width: 0;
     opacity: 0;
     height: 110%;
+    cursor: none;
     color: black;
+    outline: none;
     position: fixed;
     overflow: hidden;
     background: yellow;
@@ -369,11 +371,20 @@ export const NavMobileToggleViews = styled.div`
         display: flex;
         color: yellow;
         cursor: pointer;
-        
         padding: 20px 20px;
         position: absolute;
         background: black;
         border-radius: 100px;
+
+        @media (max-width:800px) {
+            cursor: none;
+            outline: none;
+        }
+    }
+
+    @media (max-width:800px) {
+        cursor: none;
+        outline: none;
     }
 
 `;
@@ -414,6 +425,11 @@ export const NavMobileToggleViewsLinks = styled.div`
 
     &:nth-child(4){
         margin-left:1.5em;
+    }
+
+    @media (max-width:800px) {
+        cursor: none;
+        outline: none;
     }
 `;
 
