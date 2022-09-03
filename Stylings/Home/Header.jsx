@@ -78,7 +78,7 @@ export const HeaderCategoryList = styled.ul`
 //-----------------------Header Banners Container---------------------------//
 
 export const HeaderBannersCont = styled.div`
-    width: 160vh;
+    width: 100%;
     height: 75vh;
     display: flex;
     margin-top: 10px;
