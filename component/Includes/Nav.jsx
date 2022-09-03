@@ -1,6 +1,6 @@
-import { faBagShopping, faBorderAll, faChevronDown, faMagnifyingGlass, faTimes, faUser } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Fragment, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBagShopping, faBorderAll, faChevronDown, faMagnifyingGlass, faTimes, faUser } from '@fortawesome/free-solid-svg-icons'
 import { NavCont, NavDownCategory, NavDownCont, NavDownHelpLinkCont, NavDownHelpLinks, NavMobileLine1, NavMobileLine2, NavMobileLine3, NavMobileToggle, NavMobileToggleViews, NavMobileToggleViewsLinkCont, NavMobileToggleViewsLinks, NavTopCont, NavTopLink, NavTopLinkCont, NavTopLinkDot, NavTopLogo, NavTopSearch, NavTopSearchBtn, NavTopSearchInput } from '../../Stylings/includes/Nav'
 
 const Nav = () => {
@@ -73,8 +73,7 @@ const Nav = () => {
                     <NavMobileToggleViewsLinks>
                         Contact Us
                     </NavMobileToggleViewsLinks>
-                </NavMobileToggleViewsLinkCont>
-                
+                </NavMobileToggleViewsLinkCont>           
             </NavMobileToggleViews>
         </Fragment>
     )
