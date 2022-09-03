@@ -77,7 +77,7 @@ export const HeaderCategoryList = styled.ul`
 
 //-----------------------Header Banners Container---------------------------//
 
-export const HeaderBannersCont = styled.ul`
+export const HeaderBannersCont = styled.div`
     width: 160vh;
     height: 75vh;
     display: flex;
@@ -90,12 +90,55 @@ export const HeaderBannersCont = styled.ul`
     
     @media (max-width: 800px) {
         width: 99.1%;
-        margin-top: 0px;
-        margin-left: -15.5vh;
+        height: 39.5vh;
+        margin-top: 3px;
+        margin-left: -13.8vh;
+    }
+
+    @media (max-width: 500px) {
+        width: 99.1%;
+        height: 88vh;
+        margin-top: 0;
+        margin-left: -11.55vh;
     }
 
 `;
 
+//-----------------------Header Banner Texts---------------------------//
+
+export const HeaderBannerText = styled.div`
+    display: flex;
+    margin: auto 0;
+    margin-left: 10px;
+    flex-direction: column;
+`;
+
+export const HeaderBannerTextH1 = styled.h1`
+    font-size: 3.2em;
+    
+    line-height: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+`;
+
+export const HeaderBannerTextH3 = styled.h3`
+    width: 60%;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    word-wrap: break-word;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+`;
+
+export const HeaderBannerTextLink = styled.li`
+    
+`;
 
 
+//-----------------------Header Banner Image---------------------------//
+
+export const HeaderBannerImage = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
 

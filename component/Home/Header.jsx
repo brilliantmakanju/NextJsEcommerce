@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { HeaderBannerCont, HeaderBannersCont, HeaderCategoryContainer, HeaderCategoryList, HeaderCategoryType } from '../../Stylings/Home/Header'
+import { HeaderBannerCont, HeaderBannersCont, HeaderBannerText, HeaderBannerTextH1, HeaderBannerTextH3, HeaderCategoryContainer, HeaderCategoryList, HeaderCategoryType } from '../../Stylings/Home/Header'
 
 const Header = () => {
 
@@ -51,6 +51,33 @@ const Header = () => {
     }
   ]
 
+  const Banners = [
+    {
+      title:'50% off For Your First Shopping',
+      desc:'Signup now and get 50% off on your first shopping Signup now and get 50% off on your first shopping Signup now and get 50% off on your first shopping Signup now and get 50% off on your first shopping ',
+      linkUrl:'/',
+      imgUrl:'assest/p1.png'
+    }
+    // {
+    //   title:'50% off For Your First Shopping',
+    //   desc:'Signup now and get 50% off on your fisth shopping',
+    //   linkUrl:'/',
+    //   imgUrl:'assest/p2.png'
+    // },
+    // {
+    //   title:'50% off For Your First Shopping',
+    //   desc:'Signup now and get 50% off on your fisth shopping',
+    //   linkUrl:'/',
+    //   imgUrl:'assest/p3.png'
+    // },
+    // {
+    //   title:'50% off For Your First Shopping',
+    //   desc:'Signup now and get 50% off on your fisth shopping',
+    //   linkUrl:'/',
+    //   imgUrl:'assest/p4.png'
+    // }
+  ]
+
   return (
     <HeaderBannerCont>
       <HeaderCategoryContainer>
@@ -64,9 +91,17 @@ const Header = () => {
           }
         </HeaderCategoryType>
       </HeaderCategoryContainer>
-
       <HeaderBannersCont>
-        
+        {
+          Banners.map((banner) => (
+            <>
+              <HeaderBannerText>
+                <HeaderBannerTextH1>{banner.title}</HeaderBannerTextH1>
+                <HeaderBannerTextH3>{banner.desc}</HeaderBannerTextH3>
+              </HeaderBannerText>
+            </>
+          ))
+        }
       </HeaderBannersCont>
     </HeaderBannerCont>
   )
