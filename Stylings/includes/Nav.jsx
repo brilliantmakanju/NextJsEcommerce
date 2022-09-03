@@ -437,7 +437,7 @@ export const NavMobileToggleViewsLinks = styled.div`
     }
 
     @media (max-width:800px) {
-        /* cursor: none; */
+        cursor: none;
         outline: none;
     }
 `;
