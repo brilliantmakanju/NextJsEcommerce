@@ -1,21 +1,20 @@
 import 'animate.css'
-import '../public/Styles.css'
+import '../public/Global.css'
 import '../public/Animateds.scss'
+import Header from '../component/header/Header';
 import { Fragment, useEffect, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import Header from '../component/Includes/Header';
-import Nav from '../component/Includes/Nav';
 
 const GlobalStyle = createGlobalStyle`
     @font-face {
-    font-family: 'QwitcherGrypen-Regular';
+    font-family: 'QG-Regular';
     src: url('/fonts/QwitcherGrypen-Regular.ttf');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
   }
   @font-face {
-    font-family: 'QwitcherGrypen-Bold';
+    font-family: 'QG-Bold';
     src: url('/fonts/QwitcherGrypen-Bold.ttf');
     font-style: bold;
     font-weight: 700;
@@ -29,7 +28,6 @@ export default function MyApp({ Component, pageProps }) {
         <Fragment>
             <GlobalStyle />
             <Header />
-            <Nav />
             <style jsx global>{`
                 * {
                     margin: 0;
@@ -49,8 +47,10 @@ export default function MyApp({ Component, pageProps }) {
                     cursor:pointer;
                 }
             `}</style>
-            <Component {...pageProps} >
-            </Component>
+            <div style={{padding:"0 10px"}}>
+                <Component {...pageProps} >
+                </Component>
+            </div>
         </Fragment>
     )
 }
