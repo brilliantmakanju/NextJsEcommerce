@@ -5,7 +5,7 @@ import { HeadCont, HeadConts, HeadLeft, HeadRight } from '../Styles/header/Head'
 
 const Head = () => {
     return (
-        <HeadConts>
+        <HeadConts className='TopHead'>
             <HeadCont className='d_flex'>
                 <div>
                     <FontAwesomeIcon icon={faPhone} />

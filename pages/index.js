@@ -5,9 +5,13 @@ import Categories from '../component/Home/Categories'
 import FlashDeal from '../component/Home/Flashydeal/FlashDeal'
 import TopCate from '../component/Home/TopCate/TopCate'
 import NewArrival from '../component/Home/NewArrivals/NewArrival'
+import Discount from '../component/Home/Discount/Discount'
+import Store from '../component/Home/PhoneStore/Store'
+import Announc from '../component/Home/Announcment/Announc'
 
 
 export default function Home() {
+
   return (
     <div className="container">
       <Head>
@@ -24,6 +28,9 @@ export default function Home() {
         <FlashDeal />
         <TopCate />
         <NewArrival />
+        <Discount />
+        <Store />
+        <Announc />
       </main>
     </div>
   )

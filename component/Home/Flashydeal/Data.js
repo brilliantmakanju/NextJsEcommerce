@@ -1,3 +1,6 @@
+import { icon } from "@fortawesome/fontawesome-svg-core"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 export const FlashyProduct = [
     {
         id: 1,
@@ -157,6 +160,190 @@ export const NewArrivalProduct = [
         price: 360,
         name: "shoe",
         productimg: 'assest/p6.png',
+    }
+]
+
+export const TopDicountProduct = [
+    {
+        id: 1,
+        price: 100,
+        discount: 20,
+        name: "shoe timber leak nike",
+        productimg: 'assest/p1.png',
+    },
+    {
+        id: 2,
+        price: 150,
+        discount: 15,
+        name: "shoe",
+        productimg: 'assest/p2.png',
+    },
+    {
+        id: 3,
+        price: 200,
+        discount: 25,
+        name: "shoe",
+        productimg: 'assest/p3.png',
+    },
+    {
+        id: 4,
+        price: 250,
+        discount: 10,
+        name: "shoe",
+        productimg: 'assest/p4.png',
+    },
+    {
+        id: 5,
+        price: 300,
+        discount: 45,
+        name: "shoe",
+        productimg: 'assest/p9.png',
+    },
+    {
+        id: 6,
+        price: 360,
+        discount: 30,
+        name: "shoe",
+        productimg: 'assest/p6.png',
+    }
+]
+
+
+export const PhoneProduct = [
+    {
+        id: 1,
+        price: 100,
+        discount: 20,
+        name: "shoe timber leak nike",
+        productimg: 'assest/p1.png',
+    },
+    {
+        id: 2,
+        price: 150,
+        discount: 15,
+        name: "shoe",
+        productimg: 'assest/p2.png',
+    },
+    {
+        id: 3,
+        price: 200,
+        discount: 25,
+        name: "shoe",
+        productimg: 'assest/p3.png',
+    },
+    {
+        id: 4,
+        price: 250,
+        discount: 10,
+        name: "shoe",
+        productimg: 'assest/p4.png',
+    },
+    {
+        id: 5,
+        price: 300,
+        discount: 45,
+        name: "shoe",
+        productimg: 'assest/p9.png',
+    },
+    {
+        id: 6,
+        price: 360,
+        discount: 30,
+        name: "shoe",
+        productimg: 'assest/p6.png',
+    },
+    {
+        id: 7,
+        price: 100,
+        discount: 20,
+        name: "shoe timber leak nike",
+        productimg: 'assest/p1.png',
+    },
+    {
+        id: 8,
+        price: 150,
+        discount: 15,
+        name: "shoe",
+        productimg: 'assest/p2.png',
+    },
+    {
+        id: 9,
+        price: 200,
+        discount: 25,
+        name: "shoe",
+        productimg: 'assest/p3.png',
+    },
+    {
+        id: 10,
+        price: 250,
+        discount: 10,
+        name: "shoe",
+        productimg: 'assest/p4.png',
+    },
+    {
+        id: 11,
+        price: 300,
+        discount: 45,
+        name: "shoe",
+        productimg: 'assest/p9.png',
+    },
+    {
+        id: 12,
+        price: 360,
+        discount: 30,
+        name: "shoe",
+        productimg: 'assest/p6.png',
+    }
+]
+
+
+export const PhoneCategory = [
+    {
+        name: "Redmi",
+        productimg: 'assest/p1.png',
+    },
+    {
+        name: "Iphone",
+        productimg: 'assest/p2.png',
+    },
+    {
+        name:"Samsung",
+        productimg: 'assest/p3.png',
+    },
+    {
+        name: "Oppo",
+        productimg: 'assest/p4.png',
+    },
+    {
+        name: "Nokia",
+        productimg: 'assest/p9.png',
+    },
+    {
+        name: "Windows",
+        productimg: 'assest/p6.png',
+    }
+]
+
+export const OurService= [
+    {
+        desc:"We offer competitive prices on our 100 million plus product any range",
+        name: "24/7 Support",
+        icon:"faHeadset"
+    },
+    {
+        desc:"We offer competitive prices on our 100 million plus product any range",
+        name: "Worldwide Deivery",
+        icon:"faTruckFast"
+    },
+    {
+        desc:"We offer competitive prices on our 100 million plus product any range",
+        name: "Safe Payement",
+        icon:"faIdCard"
+    },
+    {
+        desc:"We offer competitive prices on our 100 million plus product any range",
+        name: "Shop with Confidence",
+        icon:"faShield"
     }
 ]
 

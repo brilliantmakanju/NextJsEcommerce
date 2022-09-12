@@ -4,6 +4,7 @@ import '../public/Animateds.scss'
 import Header from '../component/header/Header';
 import { Fragment, useEffect, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
+import Footer from '../component/header/Footer';
 
 const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -47,10 +48,11 @@ export default function MyApp({ Component, pageProps }) {
                     cursor:pointer;
                 }
             `}</style>
-            <div style={{padding:"0 10px"}}>
+            <div style={{ padding: "0 10px" }}>
                 <Component {...pageProps} >
                 </Component>
             </div>
+            <Footer />
         </Fragment>
     )
 }

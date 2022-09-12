@@ -35,4 +35,24 @@ export const NewArrivalCont = styled.section`
     }
 
 
+    .container .grid.product{
+        display:grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .container .grid.product{
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .box{
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        background-color: yellow;
+        box-shadow: 1px 1px 1px 1px black;
+    }
+
 `;

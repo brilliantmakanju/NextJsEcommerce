@@ -438,43 +438,254 @@ button {
     border-radius: 50px;
 }
 
-.nametop span .tleft{
+.nametop span .tleft {
     left: 0;
 }
 
-.nametop span .tright{
+.nametop span .tright {
     background-color: red;
     position: absolute;
     right: 0;
 }
 
+.announc {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.announc .product {
+    padding: 30px;
+}
+
+.announc .product h3 {
+    font-weight: 500;
+}
+
+.announc .product p {
+    color: red;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.announc .img {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    padding: 15px;
+    color: yellow;
+    line-height: 70px;
+    border-radius: 50%;
+    padding-right: 15px;
+    padding-top: 12.5px;
+    background: black;
+    margin-bottom: 20px;
+    border: 1px white solid;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.announc .img svg {
+    width: 40px;
+}
+
+footer {
+    color: white;
+    margin-top: 25px;
+    padding: 100px 25px;
+    background: black;
+}
+
+footer .img {
+    padding: 15px 20px;
+}
+
+.grid2 {
+    display: flex;
+    flex-grow: 50em;
+    justify-content: space-between;
+}
+
+.grid2 .box h2 {
+    margin-top: 55px;
+}
+
+.grid2 .box h1:hover {
+    cursor: pointer;
+}
+
+.grid2 .box ul li {
+    margin: 15px 0;
+    transition: .5s;
+}
+
+.grid2 .box ul li:hover {
+    margin: 15px 0;
+    color: yellow;
+    cursor: pointer;
+}
+
+.grid2 .box .icon.d_flex .img.d_flex {
+    padding: 10px;
+    color: black;
+    transition: .5s;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: yellow;
+}
+
+.grid2 .box .icon.d_flex .img.d_flex span {
+    margin-left: 10px;
+}
+
+.grid2 .box .icon.d_flex .img.d_flex:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* .grid2 .box:nth-child(1){
+    flex-grow: 30em;
+    background-color: red;
+    margin-right: 50px;
+}
+
+.grid2 .box:nth-child(2){
+    flex-grow: 30em;
+    margin-right: 30px;
+}
+
+.grid2 .box:nth-child(3){
+    flex-grow: 30em;
+    margin-right: 30px;
+}
+
+.grid2 .box:nth-child(4){
+    flex-grow: 30em;
+    margin-right: 30px;
+} */
+
+footer h1 {
+    color: yellow;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+footer .D_logo {
+    width: 50px;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: transparent;
+    font-family: QG-Bold;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: yellow;
+}
+
+footer .arb_logo {
+    color: black;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer .y_logo {
+    font-size: 2.5em;
+    margin-top: -10px;
+    color: transparent;
+    font-family: QG-Regular;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: yellow;
+}
+
+.activeNavSearch{
+    display: none;
+}
+
+@media (max-width:600px) {
+
+    /* Navigation Styling form mobile  */
+
+    .TopHead{
+        display: none;
+    }
+
+    .logo {
+        left: 0;
+        top: 10px;
+        position: absolute;
+    }
+
+    .searchDiv {
+        display: none;
+    }
+
+    .activeNav .logo {
+        top: 5px;
+    }
+
+    .activeNavSearch{
+        top: 20px;
+        height: 20px;
+        display: flex;
+        position: absolute;
+        z-index: 99999;
+    }
+
+    .Catehide{
+        display: none;
+    }
+
+    .mobilemenu-toggle .open{
+        margin-top: -40px;
+    }
+
+    .navTag svg{
+        width: 20px;
+        color: yellow;
+    }
+
+    .Navbar {
+        display: none;
+    }
+
+    #SearchNavIcon button{
+        width: 50px;
+        height: 50px;
+        display: block;
+        transition: .5s;
+        border-radius: 5%;
+        margin-right: 20px;
+        /* padding-left: 5px;
+        text-align: center;
+        padding-right: 10px; */
+        border: 2px solid white;
+        background-color: yellow;
+    }
+
+    #SearchNavIcon button .open{
+        width: 40px;
+        padding: 5px;
+        color: black;
+        margin-top: 1px;
+    }
+
+    #SearchNavIcon .close{
+        width: 40px;
+        padding: 5px;
+        margin-top: -5px;
+    } 
 
 
+    /* carousel top slider info mobile stylings */
 
+    
 
+}
 
+@media (max-width:900px) {}
 
+@media (max-width:1200px) {}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width:1800px) {}

@@ -106,6 +106,7 @@ export const SearchBox = styled.form`
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
 `;
 
 export const SearchNavIcon = styled.ul`
@@ -163,6 +164,10 @@ export const SearchNavIcon = styled.ul`
         color: black;
         border: 1px solid black;
         background-color: yellow;
+    }
+
+    button{
+        display: none;
     }
 
     /* li */

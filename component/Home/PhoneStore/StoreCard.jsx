@@ -1,10 +1,10 @@
+import React from 'react'
 import 'slick-carousel/slick/slick.css'
 import Slider from 'react-slick/lib/slider'
 import 'slick-carousel/slick/slick-theme.css'
-import React, { useEffect, useState } from 'react'
-import { CartProduct, FlashyProduct } from './Data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong, faArrowRightLong, faHeart, faPlus, faStar } from '@fortawesome/free-solid-svg-icons'
+import { PhoneProduct } from '../Flashydeal/Data'
 
 const NextArrow = (props) => {
     const { onClick } = props
@@ -24,31 +24,7 @@ const PrevArrow = (props) => {
     </div>
 }
 
-const FlashCard = () => {
-
-    const productItem = FlashyProduct
-
-    const cartItemsProduct = CartProduct
-
-    const [likeCount, setLikeCount] = useState(0)
-
-    const increaseLike = () => {
-        setLikeCount(likeCount + 1)
-    }
-
-    const [cartItems, setCartItems] = useState([])
-
-
-    useEffect(() => {
-        // set
-        addToCart
-        // return addToCart
-    }, [])
-
-    const addToCart = (product) => {
-        let cartItemArray = cartItemsProduct
-        setCartItems(localStorage.setItem('darbyEcommCartItem', [JSON.stringify(cartItemArray)]))
-    }
+const StoreCard = () => {
 
     const settings = {
         speed: 500,
@@ -62,17 +38,13 @@ const FlashCard = () => {
     }
 
     return (
-        <>
-
-            {cartItems}
-
-            <Slider {...settings} >
+            <>
                 {
-                    productItem.map((value) => (
-                        <div className="productSlides box">
+                    PhoneProduct.map((value) => (
+                        <div className="box">
                             <div className="product mtop">
                                 <div className="img">
-                                    <span style={{ fontSize: ".8em", fontWeight: "700", position:"absolute", top:"5px", left:"5px", boxShadow:"1px 1px 1px 1px black", padding:"5px", background:"black", color:"yellow", borderRadius:"10px", border:"2px solid white" }} className='discount'>
+                                    <span style={{ fontSize: ".8em", fontWeight: "700", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
                                         {
                                             value.discount
                                         }% off
@@ -87,10 +59,6 @@ const FlashCard = () => {
                                     </div>
                                 </div>
                                 <div className="productDetails">
-                                    <div className="product-like">
-                                        <label>{likeCount}</label><br />
-                                        <FontAwesomeIcon icon={faHeart} onClick={increaseLike} />
-                                    </div>
                                     <h3>{value.name}</h3>
                                     <div className="price">
                                         <h4 style={{ textDecoration: "line-through" }}>{value.price}.00</h4>
@@ -102,9 +70,53 @@ const FlashCard = () => {
                         </div>
                     ))
                 }
-            </Slider>
-        </>
+            </>
     )
 }
 
-export default FlashCard
+export default StoreCard
+
+
+
+
+
+
+// const FlashCard = () => {
+
+//     const productItem = FlashyProduct
+
+//     const cartItemsProduct = CartProduct
+
+//     const [likeCount, setLikeCount] = useState(0)
+
+//     const increaseLike = () => {
+//         setLikeCount(likeCount + 1)
+//     }
+
+//     const [cartItems, setCartItems] = useState([])
+
+
+//     useEffect(() => {
+//         // set
+//         addToCart
+//         // return addToCart
+//     }, [])
+
+//     const addToCart = (product) => {
+//         let cartItemArray = cartItemsProduct
+//         setCartItems(localStorage.setItem('darbyEcommCartItem', [JSON.stringify(cartItemArray)]))
+//     }
+
+
+
+//     return (
+//         <>
+
+//             {cartItems}
+
+            
+//         </>
+//     )
+// }
+
+// export default FlashCard
