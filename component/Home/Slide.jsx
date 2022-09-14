@@ -4,7 +4,7 @@ import { SliderCardCont } from '../Styles/Home/SliderCard'
 
 const Slide = () => {
     return (
-        <SliderCardCont className='homeSlide contentWidth'>
+        <SliderCardCont id='homeSlide' className='homeSlide contentWidth'>
             <div className='container sliderCont'>
                 <SliderCard />
             </div>

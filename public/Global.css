@@ -680,7 +680,39 @@ footer .y_logo {
 
     /* carousel top slider info mobile stylings */
 
-    
+    #categories-top{
+        display: none;
+    }
+
+    #homeSlide{
+        width: 35em;
+        margin-left: 1em;
+        margin-top: -50px;
+        padding-right: 3em;
+        margin-bottom: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #homeSlide ul{
+        top: 24em;
+    }
+
+    #homeSlidecont h1{
+        font-size: 2.6em;
+    }
+
+    #homeSlidecont p{
+        font-size: 1em;
+    }
+
+    main{
+        overflow-x: hidden;
+    }
+
+    footer{
+        overflow-x: hidden;
+    }
 
 }
 

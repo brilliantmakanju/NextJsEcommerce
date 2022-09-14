@@ -65,13 +65,13 @@ const SliderCard = () => {
     <Slider {...settings} >
       {
         Slidedata.map((value, index) => (
-          <div className="box d_flex top" key={index}>
-            <div className="left">
+          <div className="box d_flex top" id='homeSlidecont' key={index}>
+            <div className="left" id='homeSlideText'>
               <h1>{value.slideTextH1}</h1>
               <p>{value.slideTextP}</p>
               <button>View Collections</button>
             </div>
-            <div className="right">
+            <div className="right" id='homeSlideImg'>
               <img src={value.slideImg} alt={value.slideTextH1} />
             </div>
           </div>

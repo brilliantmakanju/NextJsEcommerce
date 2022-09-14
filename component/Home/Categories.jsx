@@ -52,7 +52,7 @@ const Categories = () => {
     ]
 
     return (
-        <CategoryContainer>
+        <CategoryContainer id='categories-top'>
             {
                 dataCate.map((data, index) => (
                     <div className='box f_flex' key={index}>
