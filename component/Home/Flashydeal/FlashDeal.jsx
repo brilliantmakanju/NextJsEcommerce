@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const FlashDeal = () => {
     return (
         <section className='flash background'>
-            <div className='container'>
+            <div className='container ' id='producstSlideCont'>
                 <div className='heading f_flex'>
                     <FontAwesomeIcon icon={faBolt} />
                     <h1>Flash Deals</h1>

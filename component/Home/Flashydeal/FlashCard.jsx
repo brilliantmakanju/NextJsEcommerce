@@ -69,8 +69,8 @@ const FlashCard = () => {
             <Slider {...settings} >
                 {
                     productItem.map((value) => (
-                        <div className="productSlides box">
-                            <div className="product mtop">
+                        <div className="productSlides box" id='productSlides'>
+                            <div className="product mtop" id='productSlides-Box'>
                                 <div className="img">
                                     <span style={{ fontSize: ".8em", fontWeight: "700", position:"absolute", top:"5px", left:"5px", boxShadow:"1px 1px 1px 1px black", padding:"5px", background:"black", color:"yellow", borderRadius:"10px", border:"2px solid white" }} className='discount'>
                                         {
