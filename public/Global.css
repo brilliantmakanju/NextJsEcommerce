@@ -603,12 +603,6 @@ footer .y_logo {
     display: none;
 }
 
-main{
-}
-
-footer{
-    overflow-x: hidden;
-}
 
 @media (max-width:600px) {
 
