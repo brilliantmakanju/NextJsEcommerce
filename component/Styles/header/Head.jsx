@@ -22,7 +22,6 @@ export const HeadConts = styled.section`
 
 export const HeadCont = styled.div`
     max-width: 90%;
-    margin: auto;
 `;
 
 // export const HeadLeft = styled.div`

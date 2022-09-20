@@ -487,6 +487,12 @@ button {
     width: 40px;
 }
 
+button.slick-arrow.slick-prev,
+button.slick-arrow.slick-next{
+    display: none;
+    opacity: 0;
+}
+
 footer {
     color: white;
     margin-top: 25px;
