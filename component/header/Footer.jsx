@@ -60,10 +60,10 @@ const Footer = () => {
                         <h2>Contact Us</h2>
                         <ul>
                             <li>
-                                Email: darbyecommerce@darbyEcommerce.com
+                                Email: (emailhere)
                             </li>
                             <li>
-                                +2349-0155-73136
+                                number
                             </li>
                         </ul>
                     </div>
