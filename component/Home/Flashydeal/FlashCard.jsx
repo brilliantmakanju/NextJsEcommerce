@@ -32,6 +32,8 @@ const FlashCard = () => {
 
     const [likeCount, setLikeCount] = useState(0)
 
+    const [phoneSize, setPhonesize] = useState(false)
+
     const increaseLike = () => {
         setLikeCount(likeCount + 1)
     }
@@ -42,9 +44,12 @@ const FlashCard = () => {
     useEffect(() => {
         // set
         addToCart
+    
         // return addToCart
-    }, [])
 
+    }, [])
+    
+    // alert(phoneSize)
     const addToCart = (product) => {
         let cartItemArray = cartItemsProduct
         setCartItems(localStorage.setItem('darbyEcommCartItem', [JSON.stringify(cartItemArray)]))
@@ -54,7 +59,7 @@ const FlashCard = () => {
         speed: 500,
         dots: false,
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         slidesToShow: 5,
         sliderToScroll: 1,
         nextArrow: <NextArrow />,

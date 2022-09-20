@@ -13,7 +13,7 @@ import Announc from '../component/Home/Announcment/Announc'
 export default function Home() {
 
   return (
-    <div className="container">
+    <div >
       <Head>
         <title>Ecommerce</title>
         <link rel="icon" href="assest/LoginSidePic.jpeg" />

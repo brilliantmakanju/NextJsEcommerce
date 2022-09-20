@@ -239,7 +239,7 @@ button {
 
 .product button:hover {
     color: yellow;
-    background: black;
+    background-color: rgb(33, 33, 214);
 }
 
 .product-like {
@@ -279,7 +279,7 @@ button {
     color: yellow;
     border-radius: 50%;
     position: absolute;
-    background: black;
+    background-color: rgb(33, 33, 214);
     transition: .5s ease-in-out;
 }
 
@@ -434,7 +434,7 @@ button {
     color: yellow;
     padding: 5px 10px;
     position: absolute;
-    background: black;
+    background-color: rgb(33, 33, 214);
     border-radius: 50px;
 }
 
@@ -477,7 +477,7 @@ button {
     border-radius: 50%;
     padding-right: 15px;
     padding-top: 12.5px;
-    background: black;
+    background-color: rgb(33, 33, 214);
     margin-bottom: 20px;
     border: 1px white solid;
     box-shadow: 2px 2px 2px 2px black;
@@ -491,7 +491,9 @@ footer {
     color: white;
     margin-top: 25px;
     padding: 100px 25px;
-    background: black;
+    transform: scale(1.04);
+    border-top: 5px solid #000;
+    background-color: rgb(30, 30, 175);
 }
 
 footer .img {
@@ -664,7 +666,7 @@ footer .y_logo {
         text-align: center;
         padding-right: 10px; */
         border: 2px solid white;
-        background-color: yellow;
+        background-color: rgb(33, 33, 214);
     }
 
     #SearchNavIcon button .open{
@@ -688,42 +690,52 @@ footer .y_logo {
     }
 
     #homeSlide{
-        width: 35em;
-        margin-left: 1em;
-        margin-top: 50px;
-        padding-right: 3em;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        margin-bottom: 60px;
+        width: 100%;
+        height: 40vh;
+        margin-left: 2px;
         align-items: center;
         justify-content: center;
     }
 
-    #homeSlide img{
+    #homeSlide #homeSlideImg{
+        width: 500%;
+    }
+
+    #homeSlidecont{
         width: 100%;
+        height: 40vh;
+        margin-top: -.5em;
+    }
+
+    #homeSlideText{
+        margin-left: 2em;
+    }
+
+    #homeSlideText button{
+        width: 15em;
+    }
+
+    #homeSlide #homeSlideImg img{
+        width: 7em;
     }
 
     #homeSlide ul{
-        top: 24em;
+        top: 20.5em;
     }
 
     #homeSlidecont h1{
-        font-size: 2.6em;
+        font-size: 1.6em;
     }
 
     #homeSlidecont p{
         font-size: 1em;
     }
 
-    #productSlides-Box{
-        width: 20em;
-        padding: 0 2em;
-    }
+    /* Product slide box  */
 
-    #productSlides{
-        width: 30em;
-        margin: 0 30em;
-    }
+   .slick-slide{
+     height: 20px;
+   }
 
 
 }

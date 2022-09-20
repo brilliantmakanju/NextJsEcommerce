@@ -39,7 +39,8 @@ export default function MyApp({ Component, pageProps }) {
                 html,
                 body {
                     user-select:none;
-                    background: white;
+                    overflow-x: hidden;
+                    background-color: rgb(33, 33, 214);
                     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
                 }
 
