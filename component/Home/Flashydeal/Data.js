@@ -300,27 +300,27 @@ export const PhoneProduct = [
 export const PhoneCategory = [
     {
         name: "Redmi",
-        productimg: 'assest/p1.png',
+        productimg: 'assest/phonecate/redmi.ico',
     },
     {
         name: "Iphone",
-        productimg: 'assest/p2.png',
+        productimg: 'assest/phonecate/apple.ico',
     },
     {
         name:"Samsung",
-        productimg: 'assest/p3.png',
+        productimg: 'assest/phonecate/samsung.ico',
     },
     {
         name: "Oppo",
-        productimg: 'assest/p4.png',
+        productimg: 'assest/phonecate/oppo.ico',
     },
     {
-        name: "Nokia",
-        productimg: 'assest/p9.png',
+        name: "Huwaei",
+        productimg: 'assest/phonecate/huwaei.ico',
     },
     {
-        name: "Windows",
-        productimg: 'assest/p6.png',
+        name: "Lenovo",
+        productimg: 'assest/phonecate/lenovo.ico',
     }
 ]
 

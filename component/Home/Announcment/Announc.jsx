@@ -35,28 +35,28 @@ const Announc = () => {
                             <FontAwesomeIcon icon={faHeadset} />
                         </div>
                         <h3>24/7 Support</h3>
-                        <p>We offer competitive prices on our 100 million plus product any range</p>
+                        <p>We offer 24/7 Customer Care Support for you our Users</p>
                     </div>
                     <div className="product" >
                         <div className="img icon-circle">
                             <FontAwesomeIcon icon={faTruckFast} />
                         </div>
                         <h3>Worldwide Delivery</h3>
-                        <p>We offer competitive prices on our 100 million plus product any range</p>
+                        <p>We make Delivery WorldWide so Shop with Us From Any Part Of The World</p>
                     </div>
                     <div className="product" >
                         <div className="img icon-circle">
                             <FontAwesomeIcon icon={faIdCard} />
                         </div>
                         <h3>Shop with Confidence</h3>
-                        <p>We offer competitive prices on our 100 million plus product any range</p>
+                        <p>Shop with Confidence on Darby as you get 20% discount on  your first purchase</p>
                     </div>
                     <div className="product" >
                         <div className="img icon-circle">
                             <FontAwesomeIcon icon={faShield} />
                         </div>
                         <h3>Safe Payement</h3>
-                        <p>We offer competitive prices on our 100 million plus product any range</p>
+                        <p>We offer encrypted Payement Method for our users</p>
                     </div>
                 </div>
             </section>
