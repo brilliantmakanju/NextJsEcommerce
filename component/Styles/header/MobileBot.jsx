@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const BottomNavigation = styled.div`
     bottom: 0;
     width: 100%;
-    height: 50px;
     position: fixed;
     background-color: gold;
 `;
@@ -13,6 +12,7 @@ export const BottomNavigationUl = styled.ul`
     flex-wrap: wrap;
     margin-top: 10px;
     align-items: center;
+    padding: 10px 0px;
     justify-content: space-around;
 `;
 
