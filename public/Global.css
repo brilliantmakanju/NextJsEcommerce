@@ -488,7 +488,7 @@ button {
 }
 
 button.slick-arrow.slick-prev,
-button.slick-arrow.slick-next{
+button.slick-arrow.slick-next {
     display: none;
     opacity: 0;
 }
@@ -606,7 +606,7 @@ footer .y_logo {
     -webkit-text-stroke-color: yellow;
 }
 
-.activeNavSearch{
+.activeNavSearch {
     display: none;
 }
 
@@ -615,7 +615,7 @@ footer .y_logo {
 
     /* Navigation Styling form mobile  */
 
-    .TopHead{
+    .TopHead {
         display: none;
     }
 
@@ -633,7 +633,7 @@ footer .y_logo {
         top: 5px;
     }
 
-    .activeNavSearch{
+    .activeNavSearch {
         top: 20px;
         height: 20px;
         display: flex;
@@ -641,15 +641,15 @@ footer .y_logo {
         z-index: 99999;
     }
 
-    .Catehide{
+    .Catehide {
         display: none;
     }
 
-    .mobilemenu-toggle .open{
+    .mobilemenu-toggle .open {
         margin-top: -40px;
     }
 
-    .navTag svg{
+    .navTag svg {
         width: 20px;
         color: yellow;
     }
@@ -658,9 +658,9 @@ footer .y_logo {
         display: none;
     }
 
-    
 
-    #SearchNavIcon button{
+
+    #SearchNavIcon button {
         width: 50px;
         height: 50px;
         display: block;
@@ -674,27 +674,27 @@ footer .y_logo {
         background-color: rgb(33, 33, 214);
     }
 
-    #SearchNavIcon button .open{
+    #SearchNavIcon button .open {
         width: 40px;
         padding: 5px;
         color: black;
         margin-top: 1px;
     }
 
-    #SearchNavIcon .close{
+    #SearchNavIcon .close {
         width: 40px;
         padding: 5px;
         margin-top: -5px;
-    } 
+    }
 
 
     /* carousel top slider info mobile stylings */
 
-    #categories-top{
+    #categories-top {
         display: none;
     }
 
-    #homeSlide{
+    #homeSlide {
         width: 100%;
         height: 40vh;
         margin-left: 2px;
@@ -702,46 +702,49 @@ footer .y_logo {
         justify-content: center;
     }
 
-    #homeSlide #homeSlideImg{
+    #homeSlide #homeSlideImg {
         width: 500%;
     }
 
-    #homeSlidecont{
+    #homeSlidecont {
         width: 100%;
         height: 40vh;
         margin-top: -.5em;
     }
 
-    #homeSlideText{
+    #homeSlideText {
         margin-left: 2em;
     }
 
-    #homeSlideText button{
+    #homeSlideText button {
         width: 15em;
     }
 
-    #homeSlide #homeSlideImg img{
+    #homeSlide #homeSlideImg img {
         width: 7em;
     }
 
-    #homeSlide ul{
-        top: 20.5em;
+    #homeSlide ul {
+        display: none;
     }
 
-    #homeSlidecont h1{
+    #homeSlidecont h1 {
         font-size: 1.6em;
     }
 
-    #homeSlidecont p{
+    #homeSlidecont p {
         font-size: 1em;
     }
 
     /* Product slide box  */
 
-   .slick-slide{
-     height: 20px;
-   }
+    .slick-slide {
+        height: 20px;
+    }
 
+    .desktop {
+        display: none;
+    }
 
 }
 

@@ -18,19 +18,24 @@ export default function Home() {
         <title>Ecommerce</title>
         <link rel="icon" href="assest/LoginSidePic.jpeg" />
       </Head>
-      <section className="home" style={{ marginTop: "10px", marginBottom: "10px" , background:'yellow'}} >
+      <section className="home" style={{ marginTop: "10px", marginBottom: "10px", background: 'yellow' }} >
         <div className="container d_flex">
           <Categories />
           <Slide />
         </div>
       </section>
       <main>
-        <FlashDeal />
-        <TopCate />
-        <NewArrival />
-        <Discount />
-        <Store />
-        <Announc />
+        <div className="deskto">
+          <FlashDeal />
+          <TopCate />
+          <NewArrival />
+          <Discount />
+          <Store />
+          <Announc />
+        </div>
+        <div className="mobile">
+
+        </div>
       </main>
     </div>
   )
