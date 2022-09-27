@@ -151,7 +151,7 @@ const FlashCard = () => {
                                         </div>
                                         <h3>{value.name}</h3>
                                         <div className="price">
-                                            <h4>{value.price}.00</h4>
+                                            <h4>${value.price}.00</h4>
                                             <button onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button>
                                         </div>
                                         {/* <h4> New Price : {value.price - (value.price * (value.discount / 100))}.00</h4> */}

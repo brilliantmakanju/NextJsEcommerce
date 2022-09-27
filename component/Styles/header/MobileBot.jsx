@@ -4,6 +4,7 @@ export const BottomNavigation = styled.div`
     bottom: 0;
     width: 100%;
     display: none;
+    z-index: 999;
     position: fixed;
     background-color: gold;
 
