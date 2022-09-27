@@ -130,7 +130,7 @@ const FlashCard = () => {
                             <div className="productSlides box" id='productSlides'>
                                 <div className="product mtop" id='productSlides-Box'>
                                     <div className="img">
-                                        <span style={{ fontSize: ".8em", fontWeight: "700", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
+                                        <span style={{ fontSize: ".8em", fontWeight: "700", zIndex: "998", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
                                             {
                                                 value.discount
                                             }% off

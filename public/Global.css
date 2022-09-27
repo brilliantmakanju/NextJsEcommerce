@@ -751,6 +751,8 @@ footer .y_logo {
     }
 
     .product.mtop img{
+        z-index: 99;
+        position: absolute;
         margin-top: -10px;
         margin-left: -2.5px;
     }
