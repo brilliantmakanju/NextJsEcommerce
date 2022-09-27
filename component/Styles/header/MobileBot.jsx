@@ -3,8 +3,13 @@ import styled from "styled-components";
 export const BottomNavigation = styled.div`
     bottom: 0;
     width: 100%;
+    display: none;
     position: fixed;
     background-color: gold;
+
+    @media (max-width:768px) {
+        display: block;
+    }
 `;
 
 export const BottomNavigationUl = styled.ul`

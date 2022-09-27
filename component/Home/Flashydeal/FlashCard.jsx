@@ -44,11 +44,11 @@ const FlashCard = () => {
     useEffect(() => {
         // set
         addToCart
-    
+
         // return addToCart
 
     }, [])
-    
+
     // alert(phoneSize)
     const addToCart = (product) => {
         let cartItemArray = cartItemsProduct
@@ -66,48 +66,102 @@ const FlashCard = () => {
         prevArrow: <PrevArrow />,
     }
 
+    const mobileSettings = {
+        speed: 500,
+        dots: false,
+        infinite: true,
+        autoplay: false,
+        slidesToShow: 2,
+        sliderToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+    }
     return (
         <>
+            <div className='desktop'>
 
-            {cartItems}
+                {cartItems}
 
-            <Slider {...settings} >
-                {
-                    productItem.map((value) => (
-                        <div className="productSlides box" id='productSlides'>
-                            <div className="product mtop" id='productSlides-Box'>
-                                <div className="img">
-                                    <span style={{ fontSize: ".8em", fontWeight: "700", position:"absolute", top:"5px", left:"5px", boxShadow:"1px 1px 1px 1px black", padding:"5px", background:"black", color:"yellow", borderRadius:"10px", border:"2px solid white" }} className='discount'>
-                                        {
-                                            value.discount
-                                        }% off
-                                    </span>
-                                    <img src={value.productimg} alt={value.name} />
-                                    <div className="rate">
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
-                                        <FontAwesomeIcon icon={faStar} />
+                <Slider {...settings} >
+                    {
+                        productItem.map((value) => (
+                            <div className="productSlides box" id='productSlides'>
+                                <div className="product mtop" id='productSlides-Box'>
+                                    <div className="img">
+                                        <span style={{ fontSize: ".8em", fontWeight: "700", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
+                                            {
+                                                value.discount
+                                            }% off
+                                        </span>
+                                        <img src={value.productimg} alt={value.name} />
+                                        <div className="rate">
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                            <FontAwesomeIcon icon={faStar} />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="productDetails">
-                                    <div className="product-like">
-                                        <label>{likeCount}</label><br />
-                                        <FontAwesomeIcon icon={faHeart} onClick={increaseLike} />
+                                    <div className="productDetails">
+                                        <div className="product-like">
+                                            <label>{likeCount}</label><br />
+                                            <FontAwesomeIcon icon={faHeart} onClick={increaseLike} />
+                                        </div>
+                                        <h3>{value.name}</h3>
+                                        <div className="price">
+                                            <h4 style={{ textDecoration: "line-through" }}>{value.price}.00</h4>
+                                            <button onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button>
+                                        </div>
+                                        <h4> New Price : {value.price - (value.price * (value.discount / 100))}.00</h4>
                                     </div>
-                                    <h3>{value.name}</h3>
-                                    <div className="price">
-                                        <h4 style={{ textDecoration: "line-through" }}>{value.price}.00</h4>
-                                        <button onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button>
-                                    </div>
-                                    <h4> New Price : {value.price - (value.price * (value.discount / 100))}.00</h4>
                                 </div>
                             </div>
-                        </div>
-                    ))
-                }
-            </Slider>
+                        ))
+                    }
+                </Slider>
+            </div>
+
+            <div className="mobile">
+                {cartItems}
+
+                <Slider {...mobileSettings} >
+                    {
+                        productItem.map((value) => (
+                            <div className="productSlides box" id='productSlides'>
+                                <div className="product mtop" id='productSlides-Box'>
+                                    <div className="img">
+                                        <span style={{ fontSize: ".8em", fontWeight: "700", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
+                                            {
+                                                value.discount
+                                            }% off
+                                        </span>
+                                        <img src={value.productimg} alt={value.name} />
+                                        <div className="rate">
+                                            <FontAwesomeIcon icon={faStar} /><br />
+                                            <FontAwesomeIcon icon={faStar} /><br />
+                                            <FontAwesomeIcon icon={faStar} /><br />
+                                            <FontAwesomeIcon icon={faStar} /><br />
+                                            <FontAwesomeIcon icon={faStar} /><br />
+                                        </div>
+                                    </div>
+                                    <div className="productDetails">
+                                        <div className="product-like">
+                                            <label>{likeCount}</label><br />
+                                            <FontAwesomeIcon icon={faHeart} onClick={increaseLike} />
+                                        </div>
+                                        <h3>{value.name}</h3>
+                                        <div className="price">
+                                            <h4>{value.price}.00</h4>
+                                            <button onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button>
+                                        </div>
+                                        {/* <h4> New Price : {value.price - (value.price * (value.discount / 100))}.00</h4> */}
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </Slider>
+            </div>
         </>
     )
 }

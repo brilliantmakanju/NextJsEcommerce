@@ -25,8 +25,8 @@ export default function Home() {
         </div>
       </section>
       <main>
-        <div className="deskto">
-          <FlashDeal />
+        <FlashDeal />
+        <div className="desktop">
           <TopCate />
           <NewArrival />
           <Discount />

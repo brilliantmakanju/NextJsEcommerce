@@ -746,6 +746,41 @@ footer .y_logo {
         display: none;
     }
 
+    .product.mtop{
+        width: 95%;
+    }
+
+    .product.mtop img{
+        margin-top: -10px;
+        margin-left: -2.5px;
+    }
+
+    .product.mtop .rate{
+        top: 0vh;
+        right: 0;
+        z-index: 999;
+        width: 100%;
+        margin-left: 100px ;
+    }
+
+    .product.mtop .productDetails{
+        top: 8em;
+        opacity: 1;
+        height: 0px;
+        z-index: 9;
+        padding: 10vh 10px;
+        backface-visibility: visible;
+        /* padding-top: 5vh; */
+    }
+
+    .product.mtop .product-like{
+        margin-top: 2.4em;
+    }
+
+    .product.mtop .price{
+         margin-top: 1.5em;
+    }
+
 }
 
 @media (max-width:900px) {}
