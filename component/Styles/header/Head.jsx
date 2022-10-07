@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 export const HeadConts = styled.section`
     padding: 10px 0;
-    color: yellow;
-    background-color: black;
-    border-bottom: 2px solid yellow;
+    color: #FFb423;
+    background-color: #363940;
+    border-bottom: 2px solid #FFb423;
 
     svg{
         width: 15px;

@@ -5,7 +5,7 @@ export const SearchSection = styled.section`
     color: white;
     padding: 20px 0;
     align-items: center;
-    background-color: black;
+    background-color: #363940;
 
     
 
@@ -22,7 +22,7 @@ export const SearchSection = styled.section`
     }
 
     .arb_logo{
-        color: black;
+        color: #363940;
         letter-spacing: 1px;
         -webkit-text-stroke: 1px ;
         -webkit-text-stroke-color: yellow;
@@ -52,7 +52,7 @@ export const SearchSection = styled.section`
         width: 100%;
         height: 12vh;
         z-index: 1000;
-        color: black;
+        color: #363940;
         transition: .5s;
         position: fixed;
         background: yellow;
@@ -137,7 +137,7 @@ export const SearchNavIcon = styled.ul`
         height: 50px;
         display: flex;
         padding: .5em;
-        color: black;
+        color: #363940;
         border-radius: 50%;
         align-items: center;
         background: yellow;
@@ -161,8 +161,8 @@ export const SearchNavIcon = styled.ul`
     }
 
     li:hover:not(:first-child) span{
-        color: black;
-        border: 1px solid black;
+        color: #363940;
+        border: 1px solid #363940;
         background-color: yellow;
     }
 

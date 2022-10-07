@@ -26,7 +26,7 @@ const Search = () => {
     return (
         <>
             <NavLinks>
-                <Nav className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize"}>
+                <Nav className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize displayNone"}>
                     <Link href='/'>
                         <NavLi>Home</NavLi>
                     </Link>

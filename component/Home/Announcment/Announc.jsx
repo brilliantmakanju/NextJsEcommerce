@@ -42,7 +42,7 @@ const Announc = () => {
                             <FontAwesomeIcon icon={faTruckFast} />
                         </div>
                         <h3>Worldwide Delivery</h3>
-                        <p>We make Delivery WorldWide so Shop with Us From Any Part Of The World</p>
+                        <p>We make Delivery WorldWide so Shop with Us From Any Part Of The World+</p>
                     </div>
                     <div className="product" >
                         <div className="img icon-circle">

@@ -27,7 +27,7 @@ export const TopCateCont = styled.section`
     
     svg{
         width: 25px;
-        color: black;
+        color: #363940;
     }
 
     .heading-right svg{

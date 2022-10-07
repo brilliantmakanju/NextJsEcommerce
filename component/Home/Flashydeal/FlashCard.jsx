@@ -88,7 +88,7 @@ const FlashCard = () => {
                             <div className="productSlides box" id='productSlides'>
                                 <div className="product mtop" id='productSlides-Box'>
                                     <div className="img">
-                                        <span style={{ fontSize: ".8em", fontWeight: "700", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
+                                        <span style={{ fontSize: ".8em", fontWeight: "700", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px #363940", padding: "5px", background: "#363940", color: "#FFB423", borderRadius: "10px", border: "2px solid white" }} className='discount'>
                                             {
                                                 value.discount
                                             }% off
@@ -109,10 +109,10 @@ const FlashCard = () => {
                                         </div>
                                         <h3>{value.name}</h3>
                                         <div className="price">
-                                            <h4 style={{ textDecoration: "line-through" }}>{value.price}.00</h4>
+                                            <h4 style={{ textDecoration: "line-through" }}>Old Price : {value.price}.00</h4>
                                             <button onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button>
                                         </div>
-                                        <h4> New Price : {value.price - (value.price * (value.discount / 100))}.00</h4>
+                                            <h4>Discount : {value.price - (value.price * (value.discount / 100))}$</h4>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@ const FlashCard = () => {
                             <div className="productSlides box" id='productSlides'>
                                 <div className="product mtop" id='productSlides-Box'>
                                     <div className="img">
-                                        <span style={{ fontSize: ".8em", fontWeight: "700", zIndex: "998", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px black", padding: "5px", background: "black", color: "yellow", borderRadius: "10px", border: "2px solid white" }} className='discount'>
+                                        <span style={{ fontSize: ".8em", fontWeight: "700", zIndex: "998", position: "absolute", top: "5px", left: "5px", boxShadow: "1px 1px 1px 1px #363940", padding: "5px", background: "#363940", color: "#FFB423", borderRadius: "10px", border: "2px solid white" }} className='discount'>
                                             {
                                                 value.discount
                                             }% off
@@ -147,14 +147,13 @@ const FlashCard = () => {
                                     <div className="productDetails">
                                         <div className="product-like">
                                             <label>{likeCount}</label><br />
+                                            {/* <button className='addBtns' onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button> */}
                                             <FontAwesomeIcon icon={faHeart} onClick={increaseLike} />
                                         </div>
                                         <h3>{value.name}</h3>
                                         <div className="price">
-                                            <h4>${value.price}.00</h4>
-                                            <button onClick={() => addToCart(value)} ><FontAwesomeIcon icon={faPlus} /></button>
+                                        <h4>Price :{value.price - (value.price * (value.discount / 100))}</h4>
                                         </div>
-                                        {/* <h4> New Price : {value.price - (value.price * (value.discount / 100))}.00</h4> */}
                                     </div>
                                 </div>
                             </div>

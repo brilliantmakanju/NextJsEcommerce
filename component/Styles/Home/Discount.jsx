@@ -27,7 +27,7 @@ export const DicountCont = styled.section`
     
     svg{
         width: 25px;
-        color: black;
+        color: #363940;
     }
 
     .heading-right svg{
@@ -50,9 +50,9 @@ export const DicountCont = styled.section`
         width: 100%;
         overflow: hidden;
         border-radius: 10px;
-        border: 1px solid black;
-        background-color: yellow;
-        box-shadow: 0px 0px 1px 1px black;
+        border: 1px solid #363940;
+        background-color: #FFb423;
+        box-shadow: 0px 0px 1px 1px #363940;
     }
 
     .box:hover{
@@ -66,7 +66,7 @@ export const DicountCont = styled.section`
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
-        background-color: black;
+        background-color: #363940;
         justify-content: space-between;
     }
 
@@ -89,7 +89,7 @@ export const DicountCont = styled.section`
         color: #f3f3e5;
         font-weight: 500;
         position: absolute;
-        background: black;
+        background: #363940;
         border-radius: 100px;
     }
 

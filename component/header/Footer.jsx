@@ -1,4 +1,4 @@
-import { faApplePay, faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons'
+import { faApplePay, faAppStoreIos, faGooglePlay, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React from 'react'
@@ -67,8 +67,27 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
+                    <div className="socialLinkFooter2">
+                        <ul >
+                            <li><FontAwesomeIcon icon={faTwitter} /></li>
+                            <li><FontAwesomeIcon icon={faTwitter} /></li>
+                            <li><FontAwesomeIcon icon={faTwitter} /></li>
+                            <li><FontAwesomeIcon icon={faTwitter} /></li>
+                            <li><FontAwesomeIcon icon={faTwitter} /></li>
+                        </ul>
+                    </div>
                 </div>
+
             </footer>
+            <div className="socialLinkFooter">
+                <ul >
+                    <li><FontAwesomeIcon icon={faTwitter} /></li>
+                    <li><FontAwesomeIcon icon={faTwitter} /></li>
+                    <li><FontAwesomeIcon icon={faTwitter} /></li>
+                    <li><FontAwesomeIcon icon={faTwitter} /></li>
+                    <li><FontAwesomeIcon icon={faTwitter} /></li>
+                </ul>
+            </div>
         </>
     )
 }

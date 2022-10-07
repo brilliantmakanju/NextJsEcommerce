@@ -32,7 +32,7 @@ const NavBar = () => {
                     </span>
                     <h4>Categories<FontAwesomeIcon icon={faChevronDown} /></h4>
                 </NavCategory>
-                <NavLinks>
+                <NavLinks >
                     <Nav className={"link f_flex capitalize"}>
                         <Link href='/'>
                             <NavLi>Home</NavLi>

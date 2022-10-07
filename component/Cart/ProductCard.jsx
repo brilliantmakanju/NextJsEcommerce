@@ -55,7 +55,7 @@ const ProductCard = () => {
 
                 {
                     cartItems.length === 0 ?
-                        <h1 style={{ color: "black" }} className="no-items product"> No Item are add in cart click here to visit <Link href='/' >Store</Link></h1>
+                        <h1 style={{ color: "#363940" }} className="no-items product"> No Item are add in cart click here to visit <Link href='/' >Store</Link></h1>
                         :
                         cartItems.map((value) => {
 
@@ -84,7 +84,7 @@ const ProductCard = () => {
                                                 height: "50px",
                                                 padding: "10px",
                                                 border: "2px solid white",
-                                                boxShadow: "1px 1px 10px 1px black"
+                                                boxShadow: "1px 1px 10px 1px #363940"
                                             }}>
                                                 <FontAwesomeIcon style={{ fontSize: "20px" }} icon={faXmark} />
                                             </button>

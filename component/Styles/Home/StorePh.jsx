@@ -14,7 +14,7 @@ export const PhoneStoreCont = styled.section`
     
     svg{
         width: 25px;
-        color: black;
+        color: #363940;
     }
 
     .heading-right svg{
@@ -43,7 +43,7 @@ export const PhoneStoreCont = styled.section`
         color: white;
         overflow: hidden;
         border-radius: 5px;
-        background: black;
+        background: #363940;
     }
 
     .category .chead h1{
@@ -59,19 +59,19 @@ export const PhoneStoreCont = styled.section`
 
     .category .box{
         margin: 15px 0;
-        color: black;
+        color: #363940;
         transition: .5s;
         padding:5px 10px;
         border-radius: 5px;
-        background: yellow;
+        background: #FFb423;
     }
 
     .category .box:hover{
-        color: black;
+        color: #363940;
         cursor: pointer;
         background: white;
         transform: scale(1.1);
-        box-shadow: 0px 0px 0px 2px yellow;
+        box-shadow: 0px 0px 0px 2px #FFb423;
     }
 
     .category .box2{
@@ -80,7 +80,7 @@ export const PhoneStoreCont = styled.section`
 
     .category button{
         padding: 10px;
-        color: black;
+        color: #363940;
         font-size: 17px;
         font-weight: 500;
         background: none;

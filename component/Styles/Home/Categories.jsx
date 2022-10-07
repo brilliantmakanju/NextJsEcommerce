@@ -4,12 +4,12 @@ export const CategoryContainer = styled.div`
     width: 23%;
     z-index: 1;
     height: 451px;
-    color: yellow;
+    color: #FFb423;
     overflow-x: hidden;
     overflow-y: hidden;
     border-radius: 5px;
     margin-left: -7.5px;
-    background-color: #000000;
+    background-color: #363940;
     box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
 
     img{
@@ -30,9 +30,9 @@ export const CategoryContainer = styled.div`
     }
 
     .box:hover{
-        color: black;
+        color: #363940;
         transform: scale(1.05);
-        background-color: yellow;
+        background-color: #FFb423;
     }
 `;
 

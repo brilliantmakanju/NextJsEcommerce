@@ -27,7 +27,7 @@ export const NewArrivalCont = styled.section`
     
     svg{
         width: 25px;
-        color: black;
+        color: #363940;
     }
 
     .heading-right svg{
@@ -51,8 +51,8 @@ export const NewArrivalCont = styled.section`
         overflow: hidden;
         text-align: center;
         border-radius: 10px;
-        background-color: yellow;
-        box-shadow: 1px 1px 1px 1px black;
+        background-color: #FFb423;
+        box-shadow: 1px 1px 1px 1px #363940;
     }
 
 `;

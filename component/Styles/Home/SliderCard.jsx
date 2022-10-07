@@ -11,9 +11,9 @@ export const SliderCardCont = styled.section`
         margin-left: 20px;
         padding: 13px 40px;
         border-radius: 5px;
-        border: 2px solid black;
-        background-color: yellow;
-        box-shadow: 0px 2px 2px 2px black;
+        border: 2px solid #363940;
+        background-color: #FFb423;
+        box-shadow: 0px 2px 2px 2px #363940;
     }
 
     .left button:hover{

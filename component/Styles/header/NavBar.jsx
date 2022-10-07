@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const NavHeader = styled.header`
     height: 8vh;;
-    background-color: black;
-    border-bottom: 2px solid yellow;
+    background-color: #363940;
+    border-bottom: 2px solid #FFB423;
     box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.521);
 
 
@@ -15,7 +15,7 @@ export const NavHeader = styled.header`
     }
 
     ul li {
-        color: black;
+        color: #363940;
         font-size: 15px;
         cursor: pointer;
         transition: 0.5s;
@@ -24,12 +24,12 @@ export const NavHeader = styled.header`
         padding: 10px 20px;
         border-radius: 5px;
         border: 2px solid white;
-        background-color: yellow;
+        background-color: #FFB423;
     }
 
     ul li:hover{
         color: white;
-        background-color: black;
+        background-color: #363940;
     }
 
 `;
@@ -40,8 +40,8 @@ export const NavCategory = styled.div`
     padding: 0 30px;
     margin-left: 10px;
     border-radius: 5px;
-    border: 2px solid black;
-    background-color: yellow;
+    border: 2px solid #363940;
+    background-color: #FFB423;
     
 
     span{
@@ -87,7 +87,7 @@ export const NavLinks = styled.div`
             position: fixed;
             padding-top: 5em;
             list-style-type: none;
-            background-color: yellow;
+            background-color: #FFB423;
             box-shadow: rgba(50, 50, 93, .23) 0 50px 100px -20px , rgba(0, 0, 0, 10) 0 30px 60px -30px;
         }
 
@@ -112,7 +112,7 @@ export const NavLinks = styled.div`
             right: 20px;
             padding: 10px;
             display: block;
-            color: black;
+            color: #363940;
             position: absolute;
             border-radius: 10px;
             background-color: transparent;
@@ -132,7 +132,7 @@ export const NavLinks = styled.div`
             top: 17%;
             right: 2%;
             width: 3.5em;
-            color: yellow;
+            color: #FFB423;
             backface-visibility: hidden;
         }
 
