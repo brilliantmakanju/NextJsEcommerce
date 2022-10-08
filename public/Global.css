@@ -971,28 +971,6 @@ footer .y_logo {
     }
 }
 
-@media screen and (max-width:393px) and (max-height:851px) {
-
-    .product.mtop img {
-        z-index: 99;
-        width: 50%;
-        position: absolute;
-        /* margin: 0 10px; */
-        margin-top: -15px;
-        margin-left: 10px;
-        margin-right: -1px;
-    }
-
-    .product.mtop .productDetails {
-        opacity: 1;
-        z-index: 9;
-        top: calc(3em + 10.5vh);
-        /* padding: auto 10px; */
-        /* padding-bottom: 15.9vh; */
-        padding: 8vh 1vh;
-        backface-visibility: visible;
-    }
-}
 
 @media screen and (max-width:376px) and (max-height:812px) {
 
@@ -1017,6 +995,29 @@ footer .y_logo {
     }
 }
 
+@media screen and (max-width:360px) and (max-height:740px) {
+
+    .product.mtop img {
+        z-index: 99;
+        width: 50%;
+        position: absolute;
+        /* margin: 0 10px; */
+        margin-top: -15px;
+        margin-left: 10px;
+        margin-right: -1px;
+    }
+
+    .product.mtop .productDetails {
+        opacity: 1;
+        z-index: 9;
+        top: calc(3em + 10.5vh);
+        /* padding: auto 10px; */
+        /* padding-bottom: 15.9vh; */
+        padding: 10vh 1vh;
+        backface-visibility: visible;
+    }
+}
+
 @media screen and (max-width:376px) and (max-height:667px) {
 
     .product.mtop img {
@@ -1033,6 +1034,54 @@ footer .y_logo {
         opacity: 1;
         z-index: 9;
         top: calc(4em + 11.2vh);
+        /* padding: auto 10px; */
+        /* padding-bottom: 15.9vh; */
+        padding: 10vh 1vh;
+        backface-visibility: visible;
+    }
+}
+
+@media screen and (max-width:360px) and (max-height:658px) {
+
+    .product.mtop img {
+        z-index: 99;
+        width: 50%;
+        position: absolute;
+        /* margin: 0 10px; */
+        margin-top: -15px;
+        margin-left: 10px;
+        margin-right: -1px;
+    }
+
+    .product.mtop .productDetails {
+        opacity: 1;
+        z-index: 9;
+        top: calc(4em + 11.8vh);
+        /* padding: auto 10px; */
+        /* padding-bottom: 15.9vh; */
+        padding: 10vh 1vh;
+        backface-visibility: visible;
+    }
+}
+
+
+
+@media screen and (max-width:360px) and (max-height:640px) {
+
+    .product.mtop img {
+        z-index: 99;
+        width: 50%;
+        position: absolute;
+        /* margin: 0 10px; */
+        margin-top: -15px;
+        margin-left: 10px;
+        margin-right: -1px;
+    }
+
+    .product.mtop .productDetails {
+        opacity: 1;
+        z-index: 9;
+        top: calc(5em + 10.8vh);
         /* padding: auto 10px; */
         /* padding-bottom: 15.9vh; */
         padding: 10vh 1vh;
