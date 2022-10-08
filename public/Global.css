@@ -895,6 +895,11 @@ footer .y_logo {
 
 @media screen and (max-width:600px) and (max-height:1024px){
 
+    .product-like{
+        top: -20px;
+        margin-top: 20px;
+    }
+
     .product.mtop img {
         z-index: 99;
         width: 50%;
