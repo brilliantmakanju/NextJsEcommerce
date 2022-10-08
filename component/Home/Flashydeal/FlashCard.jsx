@@ -61,7 +61,7 @@ const FlashCard = () => {
         infinite: true,
         autoplay: false,
         slidesToShow: 5,
-        sliderToScroll: 1,
+        sliderToScroll: 5,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     }
@@ -72,7 +72,7 @@ const FlashCard = () => {
         infinite: true,
         autoplay: false,
         slidesToShow: 2,
-        sliderToScroll: 1,
+        sliderToScroll: 5,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     }
