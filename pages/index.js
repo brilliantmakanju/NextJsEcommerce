@@ -18,7 +18,7 @@ export default function Home() {
         <title>Ecommerce</title>
         <link rel="icon" href="assest/LoginSidePic.jpeg" />
       </Head>
-      <section className="home" style={{ marginTop: "10px", marginBottom: "10px", background: 'yellow' }} >
+      <section className="home" style={{ marginTop: "10px", marginBottom: "10px", background: '#FFB423' }} >
         <div className="container d_flex">
           <Categories />
           <Slide />

@@ -501,6 +501,7 @@ button.slick-arrow.slick-next {
     opacity: 0;
 }
 
+
 footer {
     color: white;
     display: flex;
@@ -647,6 +648,12 @@ footer .y_logo {
 
 .socialLinkFooter ul li {
     padding: 10px 25px;
+}
+
+#homeSlide, 
+.homeSlide.contentWidth.container.sliderCont,
+#homeSlideCont{
+    background: #FFB423;
 }
 
 @media (max-width:600px) {
