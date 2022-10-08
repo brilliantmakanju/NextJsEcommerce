@@ -687,7 +687,7 @@ footer .y_logo {
     }
 
     .Catehide {
-        display: none;
+        /* display: none; */
     }
 
     .mobilemenu-toggle .open {
@@ -904,9 +904,9 @@ footer .y_logo {
 
 
     #homeSlide {
-        width: 160em;
+        width: 220em;
         height: 40vh;
-        margin-left: 2px;
+        margin-left: -2em;
         align-items: center;
         justify-content: center;
     }
