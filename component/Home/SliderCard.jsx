@@ -53,7 +53,7 @@ const SliderCard = () => {
     infinite: true,
     autoplay: true,
     slidesToShow: 1,
-    sliderToScroll: 5,
+    sliderToScroll: 20,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     appendDots: (dots) => {
