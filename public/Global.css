@@ -893,6 +893,30 @@ footer .y_logo {
 
 @media (min-width:1800px) {}
 
+@media screen and (max-width:600px) and (max-height:1024px){
+
+    .product.mtop img {
+        z-index: 99;
+        width: 50%;
+        position: absolute;
+        /* margin: 0 10px; */
+        margin-top: -10px;
+        margin-left: 40px;
+        margin-right: -1px;
+    }
+
+    .product.mtop .productDetails {
+        top: calc(4.5em + 7.5vh);
+        opacity: 1;
+        overflow-y: visible;
+        z-index: 9;
+        height: 20px;
+        padding-top: 5vh;
+        padding: 6vh 10px;
+        position: absolute;
+        backface-visibility: visible;
+    }
+}
 
 
 @media screen and (max-width:414px) and (max-height:896px){
@@ -1018,6 +1042,8 @@ footer .y_logo {
     }
 }
 
+
+
 @media screen and (max-width:376px) and (max-height:667px) {
 
     .product.mtop img {
@@ -1063,7 +1089,6 @@ footer .y_logo {
         backface-visibility: visible;
     }
 }
-
 
 
 @media screen and (max-width:360px) and (max-height:640px) {
