@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faHome, faShoppingCart, faStore, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faHome, faMagnifyingGlass, faSearch, faShoppingCart, faStore, faUser } from '@fortawesome/free-solid-svg-icons'
 import { BottomNavigation, BottomNavigationList, BottomNavigationUl } from '../Styles/header/MobileBot'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
@@ -20,44 +20,28 @@ const MobileBot = () => {
 
     return (
         <BottomNavigation>
-            {/* {
-                menu.map((item, index) => {
-                    return (
-                        <BottomNavigationUl>
-                            <Link key={index} href={item.path} >
-                                <BottomNavigationList>
-                                    <FontAwesomeIcon icon={item.icon} /> <span>{item.title}</span>
-                                </BottomNavigationList>
-                            </Link>
-                        </BottomNavigationUl>
-                    )
-                })
-            } */}
-            {
-                router.pathname === '/'
-                    ?
-                    <div className='rounderNav' ></div>
-                    :
-                    <div className='normalNav' />
-            }
             <BottomNavigationUl>
+                <BottomNavigationList>
+                    <FontAwesomeIcon icon={faSearch} />
+                </BottomNavigationList>
+                <BottomNavigationList>
+                    <FontAwesomeIcon icon={faStore} />
+                </BottomNavigationList>
                 <Link href='/'>
-                    <BottomNavigationList>
-                        <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+                    <BottomNavigationList className={router.pathname === '/' ? 'activePage' : 'unactive'} >
+                        <FontAwesomeIcon icon={faHome} />
                     </BottomNavigationList>
                 </Link>
-                <BottomNavigationList>
-                    <FontAwesomeIcon icon={faHeart} /> <span>Wishlist</span>
-                </BottomNavigationList>
-                <BottomNavigationList>
-                    <FontAwesomeIcon icon={faStore} /> <span>Store</span>
-                </BottomNavigationList>
-                <BottomNavigationList>
-                    <FontAwesomeIcon icon={faShoppingCart} /> <span>Cart</span>
-                </BottomNavigationList>
-                <BottomNavigationList>
-                    <FontAwesomeIcon icon={faUser} /> <span>Profile</span>
-                </BottomNavigationList>
+                <Link href='cart' >
+                    <BottomNavigationList  className={router.pathname === '/cart' ? 'activePage' : 'unactive'} >
+                        <FontAwesomeIcon icon={faShoppingCart} />
+                    </BottomNavigationList>
+                </Link>
+                <Link href='user' >
+                    <BottomNavigationList className={router.pathname === '/user' ? 'activePage' : 'unactive'} >
+                        <FontAwesomeIcon icon={faUser} />
+                    </BottomNavigationList>
+                </Link>
 
             </BottomNavigationUl>
         </BottomNavigation>

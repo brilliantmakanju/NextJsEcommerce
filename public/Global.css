@@ -62,7 +62,7 @@ svg {
 }
 
 .activeNav {
-    top: 0;
+    top: -1px;
     width: 100%;
     height: 12vh;
     z-index: 1000;
@@ -624,6 +624,20 @@ footer .y_logo {
 .activeNavSearch {
     display: none;
 }
+
+.activePage{
+    color: #FAC30F;
+    border-radius: 100px;
+    background: #353535;
+    border: 1px solid #FAC30F;
+    box-shadow: 1px 1px 5px 1px;
+    transform: scale(1.2) translateY(-5px);
+}
+
+.activePage svg{
+    color: #FAC30F;
+}
+
 
 .productDetails.product-like.addBtns svg {
     color: blue;

@@ -25,7 +25,7 @@ const Search = () => {
 
     return (
         <>
-            <NavLinks>
+            {/* <NavLinks>
                 <Nav className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize displayNone"}>
                     <Link href='/'>
                         <NavLi>Home</NavLi>
@@ -42,7 +42,7 @@ const Search = () => {
                         <NavLi>Cart</NavLi>
                     </Link>
                 </Nav>
-            </NavLinks>
+            </NavLinks> */}
             <SearchSection className={fixed ? 'activeNav' : 'search'} >
                 <div className="container c_flex">
                     <div className="logo width">
@@ -66,11 +66,11 @@ const Search = () => {
                             <span></span>
                         </li>
                     </Link>
-                    <button className='mobilemenu-toggle' onClick={() => setMobileMenu(!MobileMenu)}>
+                    {/* <button className='mobilemenu-toggle' onClick={() => setMobileMenu(!MobileMenu)}>
                         {MobileMenu ?
                             <FontAwesomeIcon icon={faTimes} className="close home-btn" /> :
                             <FontAwesomeIcon icon={faBars} className="open" />
-                        }</button>
+                        }</button> */}
                 </SearchNavIcon>
             </SearchSection>
         </>
