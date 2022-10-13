@@ -1,5 +1,48 @@
 import styled from "styled-components";
 
+export const FlashyImg = styled.div`
+    top:0;
+    width: 100%;
+    left: -40px;
+    height: 10.9rem;
+    position: absolute;
+    padding-right: 270px;
+    /* background-image:url(${props => props.flashimg}); */
+
+
+    #flashImgS{
+        width: 79.8%;
+        height: 12em;
+        object-fit: cover;
+    }
+`;
+
+export const FlashyColor = styled.div`
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    margin-left: 3px;
+    background:${props => props.colors};
+`;
+
+export const FlashyColorCont = ({ colors }) => {
+
+    return (
+        <FlashyColor colors={colors} />
+        // </FlashyColor>
+    )
+}
+
+export const FlashyImgCont = ({ flashimg, flashAlt }) => {
+
+    return (
+        <FlashyImg flashimg={flashimg}>
+            <img id="flashImgS" src={flashimg} alt={flashAlt} />
+        </FlashyImg>
+    )
+}
+
+
 export const DicountCont = styled.section`
 
     margin-top: 100px;

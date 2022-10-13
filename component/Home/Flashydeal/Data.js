@@ -7,42 +7,48 @@ export const FlashyProduct = [
         price: 100,
         discount: 20,
         name: "shoe timber leak nike",
-        productimg: 'assest/p1.png',
+        productimg: 'assest/Product/p1.jpg',
+        color:["red","gray","blue",'orange'],
     },
     {
         id: 2,
         price: 150,
         discount: 15,
         name: "shoe",
-        productimg: 'assest/p2.png',
+        productimg: 'assest/Product/p2.jpg',
+        color:["red","gray","blue",'orange'],
     },
     {
         id: 3,
         price: 200,
         discount: 25,
         name: "shoe",
-        productimg: 'assest/p3.png',
+        productimg: 'assest/Product/p3.jpg',
+        color:["red","gray","blue",'orange'],
     },
     {
         id: 4,
         price: 250,
         discount: 10,
         name: "shoe",
-        productimg: 'assest/p4.png',
+        productimg: 'assest/Product/p4.jpg',
+        color:["red","gray","blue",'orange'],
     },
     {
         id: 5,
         price: 300,
         discount: 45,
         name: "shoe",
-        productimg: 'assest/p9.png',
+        productimg: 'assest/Product/p5.jpg',
+        color:["red","gray","blue",'orange'],
     },
     {
         id: 6,
         price: 360,
         discount: 30,
         name: "shoe",
-        productimg: 'assest/p6.png',
+        productimg: 'assest/Product/p6.jpg',
+        color:["red","gray","blue",'orange'],
     }
 ]
 
@@ -307,7 +313,7 @@ export const PhoneCategory = [
         productimg: 'assest/phonecate/apple.ico',
     },
     {
-        name:"Samsung",
+        name: "Samsung",
         productimg: 'assest/phonecate/samsung.ico',
     },
     {
@@ -324,26 +330,26 @@ export const PhoneCategory = [
     }
 ]
 
-export const OurService= [
+export const OurService = [
     {
-        desc:"We offer competitive prices on our 100 million plus product any range",
+        desc: "We offer competitive prices on our 100 million plus product any range",
         name: "24/7 Support",
-        icon:"faHeadset"
+        icon: "faHeadset"
     },
     {
-        desc:"We offer competitive prices on our 100 million plus product any range",
+        desc: "We offer competitive prices on our 100 million plus product any range",
         name: "Worldwide Deivery",
-        icon:"faTruckFast"
+        icon: "faTruckFast"
     },
     {
-        desc:"We offer competitive prices on our 100 million plus product any range",
+        desc: "We offer competitive prices on our 100 million plus product any range",
         name: "Safe Payement",
-        icon:"faIdCard"
+        icon: "faIdCard"
     },
     {
-        desc:"We offer competitive prices on our 100 million plus product any range",
+        desc: "We offer competitive prices on our 100 million plus product any range",
         name: "Shop with Confidence",
-        icon:"faShield"
+        icon: "faShield"
     }
 ]
 

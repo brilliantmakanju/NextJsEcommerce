@@ -6,7 +6,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <footer>
+            <footer id="footer">
                 <div className="container grid2">
                     <div className="box">
                         <Link href='/'>

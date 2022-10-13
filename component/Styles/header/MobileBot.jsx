@@ -36,6 +36,6 @@ export const BottomNavigationList = styled.li`
 
 
     svg{
-        width: 25px;
+        width: 23.6px;
     }
 `;
