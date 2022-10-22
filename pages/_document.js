@@ -7,7 +7,9 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en" >
                 < Head>
-                    <link rel='manifest' href='/mainfest.json' />
+                    <meta name="theme-color" content="black" />
+                    <link rel='manifest' href='/manifest.json' />
+                    <link rel='apple-touch-icon' href='/icons/icon-384x384.png'></link>
                     <link
                         rel="preload"
                         href="/fonts/QwitcherGrypen-Bold.ttf"

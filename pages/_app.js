@@ -6,7 +6,6 @@ import { Fragment, useEffect, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import Footer from '../component/header/Footer';
 import MobileBot from '../component/header/MobileBot';
-
 const GlobalStyle = createGlobalStyle`
     @font-face {
     font-family: 'QG-Regular';
@@ -28,6 +27,9 @@ export default function MyApp({ Component, pageProps }) {
 
     return (
         <Fragment>
+            {/* <Head>
+                <link rel='manifest' href='/mainfest.json' />
+            </Head> */}
             <GlobalStyle />
             <Header />
             <style jsx global>{`
