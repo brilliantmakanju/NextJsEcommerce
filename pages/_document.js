@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en" >
                 < Head>
+                    <link rel='manifest' href='/mainfest.json' />
                     <link
                         rel="preload"
                         href="/fonts/QwitcherGrypen-Bold.ttf"
