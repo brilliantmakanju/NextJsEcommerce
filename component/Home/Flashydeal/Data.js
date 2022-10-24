@@ -7,7 +7,7 @@ export const FlashyProduct = [
         price: 100,
         discount: 20,
         name: "shoe timber leak nike",
-        productimg: 'assest/Product/p1.jpg',
+        productimg: 'assest/p4.png',
         color:["red","gray","blue",'orange'],
     },
     {
@@ -15,7 +15,7 @@ export const FlashyProduct = [
         price: 150,
         discount: 15,
         name: "shoe",
-        productimg: 'assest/Product/p2.jpg',
+        productimg: 'assest/p5.png',
         color:["red","gray","blue",'orange'],
     },
     {
@@ -23,7 +23,7 @@ export const FlashyProduct = [
         price: 200,
         discount: 25,
         name: "shoe",
-        productimg: 'assest/Product/p3.jpg',
+        productimg: 'assest/p3.png',
         color:["red","gray","blue",'orange'],
     },
     {
@@ -31,7 +31,7 @@ export const FlashyProduct = [
         price: 250,
         discount: 10,
         name: "shoe",
-        productimg: 'assest/Product/p4.jpg',
+        productimg: 'assest/p6.png',
         color:["red","gray","blue",'orange'],
     },
     {
@@ -39,7 +39,7 @@ export const FlashyProduct = [
         price: 300,
         discount: 45,
         name: "shoe",
-        productimg: 'assest/Product/p5.jpg',
+        productimg: 'assest/p7.png',
         color:["red","gray","blue",'orange'],
     },
     {
@@ -47,7 +47,7 @@ export const FlashyProduct = [
         price: 360,
         discount: 30,
         name: "shoe",
-        productimg: 'assest/Product/p6.jpg',
+        productimg: 'assest/p8.png',
         color:["red","gray","blue",'orange'],
     }
 ]

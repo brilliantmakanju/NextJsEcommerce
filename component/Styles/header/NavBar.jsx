@@ -9,7 +9,7 @@ export const NavHeader = styled.header`
 
     ul{
         display: flex;
-        line-height: 2vh;
+        line-height: 2.5vh;
         align-items: center;
         justify-content: center;
     }
@@ -62,6 +62,7 @@ export const NavCategory = styled.div`
 
 export const NavLinks = styled.div`
 
+    margin-top: 5px;
 
     .open{
         display: none;

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     overflow-x: hidden;
     
@@ -1662,7 +1664,11 @@ footer .y_logo {
     }
 } */
 
-
+.fixedCart.cart-total.product{
+    
+    z-index: 9999999;
+    position: absolute;
+}
 
 /* 
 @media (max-width:414px) {

@@ -21,6 +21,18 @@ const ProductCard = () => {
 
     // setCartItem(CartProduct)
 
+
+    const [fixed, setFixed] = useState(false)
+
+    const FixedChange = () => {
+        if (window.scrollY >= 100) {
+            setFixed(true)
+            console.log("worked")
+        } else {
+            setFixed(false)
+        }
+    }
+
     let findProduct
     let index
 
@@ -108,7 +120,7 @@ const ProductCard = () => {
                         })
                 }
             </div>
-            <div className="cart-total product">
+            <div  className={fixed ? 'fixedCart cart-total product' : 'cart-total product'} >
                 <h2>Cart Summary</h2>
                 <div className="d_flex">
                     <h4>Total Price : </h4>

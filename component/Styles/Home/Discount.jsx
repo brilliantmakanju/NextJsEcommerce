@@ -11,9 +11,13 @@ export const FlashyImg = styled.div`
 
 
     #flashImgS{
-        width: 79.8%;
-        height: 12em;
-        object-fit: cover;
+        width: 37%;
+        height: 85%;
+        /* height: 12em; */
+        /* margin: auto; */
+        margin-top: calc(25px);
+        margin-left: 67px;
+        /* object-fit: cover; */
     }
 `;
 

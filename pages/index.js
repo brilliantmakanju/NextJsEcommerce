@@ -1,13 +1,14 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import { useEffect, useState } from 'react'
-import Slide from '../component/Home/Slide'
-import Categories from '../component/Home/Categories'
-import FlashDeal from '../component/Home/Flashydeal/FlashDeal'
-import TopCate from '../component/Home/TopCate/TopCate'
-import NewArrival from '../component/Home/NewArrivals/NewArrival'
-import Discount from '../component/Home/Discount/Discount'
-import Store from '../component/Home/PhoneStore/Store'
-import Announc from '../component/Home/Announcment/Announc'
+
+const Slide = dynamic(() => import('../component/Home/Slide'))
+const Categories = dynamic(() => import('../component/Home/Categories'))
+const FlashDeal = dynamic(() => import('../component/Home/Flashydeal/FlashDeal'))
+const TopCate = dynamic(() => import('../component/Home/TopCate/TopCate'))
+const NewArrival = dynamic(() => import('../component/Home/NewArrivals/NewArrival'))
+const Discount = dynamic(() => import('../component/Home/Discount/Discount'))
+const Store = dynamic(() => import('../component/Home/PhoneStore/Store'))
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div >
       <Head>
+        
         <title>Ecommerce</title>
         <link rel="icon" href="assest/LoginSidePic.jpeg" />
       </Head>
@@ -31,10 +33,10 @@ export default function Home() {
           <NewArrival />
           <Discount />
           <Store />
-          <Announc />
+          {/* <Announc /> */}
         </div>
         <div className="mobile">
-
+          Hellos
         </div>
       </main>
     </div>
