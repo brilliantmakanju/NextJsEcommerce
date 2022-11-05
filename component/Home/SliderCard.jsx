@@ -18,12 +18,12 @@ const SliderCard = () => {
     {
       slideTextH1: '50% discount on first purchase',
       slideTextP: 'Join now and but the most relaxing massage chair Join now and but the',
-      slideImg: 'assest/Carousel/shoe4.png'
+      slideImg: 'assest/Carousel/topcar.png'
     },
     {
       slideTextH1: '50% discount on first purchase',
       slideTextP: 'Join now and but the most relaxing massage chair',
-      slideImg: 'assest/Carousel/shoe5.png'
+      slideImg: 'assest/Carousel/topcar2.png'
     },
     {
       slideTextH1: '50% discount on first purchase',

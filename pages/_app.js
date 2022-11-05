@@ -1,11 +1,13 @@
 import 'animate.css'
 import '../public/Global.css'
 import '../public/Animateds.scss'
+import styles from '../component/UI/style'
 import Header from '../component/header/Header';
-import { Fragment, useEffect, useState } from "react";
-import styled, { createGlobalStyle } from "styled-components";
 import Footer from '../component/header/Footer';
 import MobileBot from '../component/header/MobileBot';
+import { Fragment, useEffect, useState } from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import Nav from '../component/UI/Layout/Nav';
 const GlobalStyle = createGlobalStyle`
     @font-face {
     font-family: 'QG-Regular';
@@ -31,33 +33,22 @@ export default function MyApp({ Component, pageProps }) {
                 <link rel='manifest' href='/mainfest.json' />
             </Head> */}
             <GlobalStyle />
-            <Header />
-            <style jsx global>{`
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
+            {/* <Header /> */}
+            <div className='bg-primary w-full overflow-hidden'>
+                <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+                    <div className={`${styles.boxWidth}`}>
+                        <Nav />
+                    </div>
+                </div>
+            </div>
+            
 
-                html,
-                body {
-                    user-select:none;
-                    overflow-x: hidden;
-                    background: rgb(235, 230, 230);
-                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                }
-
-                a{
-                    text-decoration:none;
-                    cursor:pointer;
-                }
-            `}</style>
             <div style={{ padding: "0 10px" }}>
                 <Component {...pageProps} >
                 </Component>
             </div>
-            <MobileBot />
-            <Footer />
+            {/* <MobileBot />
+            <Footer /> */}
         </Fragment>
     )
 }
